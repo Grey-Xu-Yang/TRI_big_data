@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+  <head>
+    <title>Submit Weather</title>
+    <link type="text/css" rel="stylesheet" href="/elegant-aero.css" />
+    <style>
+          /* Set the minimum height of the body to ensure scrolling */
+          body {
+              min-height: 1000px; /* Adjust this value based on your image height */
+          }
+    </style>
+  </head>
+  <!-- Thanks to Mario C. E. Freese <mcefreese@gmail.com> for permission to use background image -->
+  <body style='background-image:URL("environment_table.jpg");background-repeat:no-repeat;background-position:center top;-webkit-background-size:100%;-moz-background-size:100%;-o-background-size:100%;background-size: 100%;'>
+    <p style="margin-bottom:5px"/>
+    <h2 class="elegant-aero" style="margin-left:30%;text-align:center;display:inline-block;color:#5E5E5E;background:#FFFFFF">&nbsp;Submit Toxic Release Information&nbsp;</h2>
+    <form action="/new_toxic.html" style="background:#FFFFFF;width:60%;margin:auto"  method="get" class="elegant-aero">
+      <label> 
+	<span>Sector Code:</span> <input type="text" name="sector" placeholder="Enter Code"/>
+      </label>
+        <label style="font-weight:bold;color:#5E5E5E">
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp; Release On-site <input type="number" name="release_on" value="0" min="0"/><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; Release Off-site <input type="number" name="release_off" value="0" min="0"/><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; Energy Transfer On-site <input type="number" name="energy_on" value="0" min="0"/><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; Energy Transfer Off-site <input type="number" name="energy_off" value="0" min="0"/><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; Recycling On-site <input type="number" name="recycle_on" value="0" min="0"/><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; Recycling Off-site <input type="number" name="recycle_off" value="0" min="0"/><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; Treatment On-site <input type="number" name="treat_on" value="0" min="0"/><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; Treatment Off-site <input type="number" name="treat_off" value="0" min="0"/><br>
+            &nbsp;&nbsp;&nbsp;&nbsp; Production Waste <input type="number" name="product_waste" value="0" min="0"/><br>
+        </label>
+      <label>
+	<span>&nbsp;</span><input type="submit" value="Submit">
+      </label>
+    </form>
+    <iframe frameBorder="0" name="results_iframe" style="width:100%"/>
+  </body>
+</html>

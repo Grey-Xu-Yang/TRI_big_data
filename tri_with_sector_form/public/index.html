@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+    <title>Sector Environmental Data</title>
+    <link type="text/css" rel="stylesheet" href="elegant-aero.css" />
+    <style>
+        /* Set the minimum height of the body to ensure scrolling */
+        body {
+            min-height: 1000px; /* Adjust this value based on your image height */
+        }
+    </style>
+</head>
+<!-- Background image attribution (if required) should be included -->
+<body style='background-image:url("environment_table.jpg"); background-repeat:no-repeat; background-position:center top; -webkit-background-size:100%; -moz-background-size:100%; -o-background-size:100%; background-size: 100%;'>
+<p style="margin-bottom:2cm"/>
+<form action="/sector-data.html" style="width:350px; margin:0 auto; padding-top=200px; background:#FFFFFF" method="get" target="results_iframe" class="elegant-aero">
+    <label>
+        <span>Sector Code:</span>
+        <input type="text" name="sector" placeholder="Enter Number"/>
+    </label>
+    <label>
+        <span></span> <input type="submit" value="Submit">
+    </label>
+    <p style="text-align: center;">  Check the left table to enter the industry code.  </p>
+</form>
+<p style="margin-bottom:2cm"/>
+
+<iframe frameBorder="0" name="results_iframe" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight + "px";}(this));' style="display:block; width:70%; margin-left:auto; margin-right:auto"/>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+    <title>Sector Data Result</title>
+    <link type="text/css" rel="stylesheet" href="table.css" />
+</head>
+<body>
+<div style="margin: 0 auto; width: fit-content; box-shadow: 10px 10px 5px #888888; border: 1px solid #000000; border-radius: 9px; background: white; padding: 10px;">
+    &nbsp; Toxic Release Information (unit: millions of pounds) &nbsp;
+</div>
+<table class="CSS_Table_Example" style="width: 80%; margin: 20px auto;">
+    <tr>
+        <th>Year</th>
+        <th>On-Site Release Total</th>
+        <th>Off-Site Release Total</th>
+        <th>Energy Recover On</th>
+        <th>Energy Recover Off</th>
+        <th>Recycling On-Site</th>
+        <th>Recycling Off-Site</th>
+        <th>Treatment On-Site</th>
+        <th>Treatment Off-Site</th>
+        <th>Production Waste</th>
+    </tr>
+    {{#sectorData}}
+        <tr>
+            <td>{{year}}</td>
+            <td>{{on_site_release_total}}</td>
+            <td>{{off_site_release_total}}</td>
+            <td>{{energy_recover_on}}</td>
+            <td>{{energy_recover_of}}</td>
+            <td>{{recycling_on_site}}</td>
+            <td>{{recycling_off_site}}</td>
+            <td>{{treatment_on_site}}</td>
+            <td>{{treatment_off_site}}</td>
+            <td>{{production_waste}}</td>
+        </tr>
+    {{/sectorData}}
+</table>
+</body>
+</html>
